@@ -1,7 +1,9 @@
 import random
 import time
+import string
 
 def ordsortintmelhorado2():
+
 
     def ordvet1():
         lista1 = []
@@ -12,7 +14,7 @@ def ordsortintmelhorado2():
         resultados1 = []
 
         for i in range(0, 3000):
-            lista1.append(random.randint(1, 100))
+            lista1.append(random.choice(string.ascii_letters))
 
         while n <= len(lista1) and troca1 == 1:
             troca1 = 0
@@ -38,7 +40,7 @@ def ordsortintmelhorado2():
         resultados2 = []
 
         for i in range(0, 5000):
-            lista2.append(random.randint(1, 100))
+            lista2.append(random.choice(string.ascii_letters))
 
         while n <= len(lista2) and troca2 == 1:
             troca2 = 0
