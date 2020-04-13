@@ -25,7 +25,7 @@ def ordsortintmelhorado2():
                     lista1[i + 1] = aux
                     qtdtrocas1 += 1
             n += 1
-        resultados1.append(qtdtrocas1)
+        resultados1.append(qtdcomparacoes1)
         resultados1.append(qtdtrocas1)
         return resultados1
 
@@ -49,9 +49,9 @@ def ordsortintmelhorado2():
                     aux = lista2[i]
                     lista2[i] = lista2[i + 1]
                     lista2[i + 1] = aux
-                    qtdtrocas2 +=1
+                    qtdtrocas2 += 1
             n += 1
-        resultados2.append(qtdtrocas2)
+        resultados2.append(qtdcomparacoes2)
         resultados2.append(qtdtrocas2)
         return resultados2
 
