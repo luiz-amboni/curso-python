@@ -13,7 +13,7 @@ def ordsortintmelhorado2():
         qtdtrocas1 = int(0)
         resultados1 = []
 
-        for i in range(0, 3000):
+        for i in range(0, 156):
             lista1.append(random.choice(string.ascii_letters))
 
         while n <= len(lista1) and troca1 == 1:
@@ -39,7 +39,7 @@ def ordsortintmelhorado2():
         qtdtrocas2 = int(0)
         resultados2 = []
 
-        for i in range(0, 5000):
+        for i in range(0, 256):
             lista2.append(random.choice(string.ascii_letters))
 
         while n <= len(lista2) and troca2 == 1:
@@ -79,5 +79,3 @@ def ordsortintmelhorado2():
     print(f'\nO tempo de execução dos vetores é de:   {tempovet1:.2f} s  VS   {tempovet2:.2f} s')
     print(f'\nA diferença de tempo de execução do vet1 para o vet2 é de:   {diftempo:.2f} s')
     print('=' * 65)
-
-ordsortintmelhorado2()

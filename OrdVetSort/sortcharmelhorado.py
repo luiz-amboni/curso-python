@@ -12,7 +12,7 @@ def ordsortchar():
         qtdtrocas1 = int(0)
         resultados1 = []
 
-        for i in range(0, 3000):
+        for i in range(0, 156):
             lista1.append(random.choice(string.ascii_letters))
 
         for i in range(0, (len(lista1)-1)):
@@ -34,7 +34,7 @@ def ordsortchar():
         qtdtrocas2 = int(0)
         resultados2 = []
 
-        for i in range(0, 5000):
+        for i in range(0, 256):
             lista2.append(random.choice(string.ascii_letters))
 
         for i in range(0, (len(lista2)-1)):
@@ -71,5 +71,3 @@ def ordsortchar():
     print(f'\nO tempo de execução dos vetores é de:   {tempovet1:.2f} s  VS   {tempovet2:.2f} s')
     print(f'\nA diferença de tempo de execução do vet1 para o vet2 é de:   {diftempo:.2f} s')
     print('=' * 65)
-
-ordsortchar()
