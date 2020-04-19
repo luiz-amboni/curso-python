@@ -2,11 +2,12 @@ import random
 import time
 import string
 
-
-def ordsortstring():
+def ordsortstringmelhorado2():
 
     def ordvet1():
         lista1 = []
+        n = int(1)
+        troca1 = int(1)
         qtdcomparacoes1 = int(0)
         qtdtrocas1 = int(0)
         resultados1 = []
@@ -17,21 +18,25 @@ def ordsortstring():
                 slista = slista + random.choice(string.ascii_letters)
             lista1.append(slista)
 
-        for i in range(0, len(lista1)):
-            for i2 in range(0, (len(lista1) - 1)):
+        while n <= len(lista1) and troca1 == 1:
+            troca1 = 0
+            for i in range(0, (len(lista1)-1)):
                 qtdcomparacoes1 += 1
-                if lista1[i2] > lista1[i2 + 1]:
-                    aux = lista1[i2]
-                    lista1[i2] = lista1[i2 + 1]
-                    lista1[i2 + 1] = aux
+                if lista1[i] < lista1[i + 1]:
+                    troca1 = 1
+                    aux = lista1[i]
+                    lista1[i] = lista1[i + 1]
+                    lista1[i + 1] = aux
                     qtdtrocas1 += 1
+            n += 1
         resultados1.append(qtdcomparacoes1)
         resultados1.append(qtdtrocas1)
         return resultados1
 
     def ordvet2():
-
         lista2 = []
+        n = int(1)
+        troca2 = int(1)
         qtdcomparacoes2 = int(0)
         qtdtrocas2 = int(0)
         resultados2 = []
@@ -42,14 +47,17 @@ def ordsortstring():
                 slista = slista + random.choice(string.ascii_letters)
             lista2.append(slista)
 
-        for i in range(0, len(lista2)):
-            for i2 in range(0, (len(lista2) - 1)):
+        while n <= len(lista2) and troca2 == 1:
+            troca2 = 0
+            for i in range(0, (len(lista2)-1)):
                 qtdcomparacoes2 += 1
-                if lista2[i2] > lista2[i2 + 1]:
-                    aux = lista2[i2]
-                    lista2[i2] = lista2[i2 + 1]
-                    lista2[i2 + 1] = aux
+                if lista2[i] < lista2[i + 1]:
+                    troca2 = 1
+                    aux = lista2[i]
+                    lista2[i] = lista2[i + 1]
+                    lista2[i + 1] = aux
                     qtdtrocas2 += 1
+            n += 1
         resultados2.append(qtdcomparacoes2)
         resultados2.append(qtdtrocas2)
         return resultados2
@@ -76,4 +84,3 @@ def ordsortstring():
     print(f'\nO tempo de execução dos vetores é de:   {tempovet1:.2f} s  VS   {tempovet2:.2f} s')
     print(f'\nA diferença de tempo de execução do vet1 para o vet2 é de:   {diftempo:.2f} s')
     print('=' * 65)
-

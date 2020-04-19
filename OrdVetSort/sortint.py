@@ -5,7 +5,6 @@ import time
 def ordsortint():
 
     def ordvet1():
-
         lista1 = []
         qtdcomparacoes1 = int(0)
         qtdtrocas1 = int(0)

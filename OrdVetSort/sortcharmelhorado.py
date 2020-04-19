@@ -6,7 +6,6 @@ import time
 def ordsortcharmelhorado():
 
     def ordvet1():
-
         lista1 = []
         qtdcomparacoes1 = int(0)
         qtdtrocas1 = int(0)
