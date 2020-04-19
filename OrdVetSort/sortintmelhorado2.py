@@ -69,3 +69,11 @@ def ordsortintmelhorado2():
     tempovet2 = fim2 - inicio2
     diftempo = tempovet2 - tempovet1
 
+    print('=' * 65)
+    print(f'Quantidade de comparações Vet3000 VS Vet5000:   {resultados1[0]}   VS   {resultados2[0]}')
+    print(f'\nQuantidade de trocas Vet3000 VS Vet5000:   {resultados1[1]}   VS   {resultados2[1]}')
+    print(f'\nDiferença comparação:   {difcomparacoes}')
+    print(f'Diferença troca:   {diftroca}')
+    print(f'\nO tempo de execução dos vetores é de:   {tempovet1:.2f} s  VS   {tempovet2:.2f} s')
+    print(f'\nA diferença de tempo de execução do vet1 para o vet2 é de:   {diftempo:.2f} s')
+    print('=' * 65)

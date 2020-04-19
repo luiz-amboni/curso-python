@@ -1,8 +1,9 @@
 import random
 import time
+import string
 
 
-def ordsortint():
+def ordsortstring():
 
     def ordvet1():
 
@@ -11,8 +12,11 @@ def ordsortint():
         qtdtrocas1 = int(0)
         resultados1 = []
 
-        for i in range(0, 3000):
-            lista1.append(random.randint(1, 100))
+        for i in range(0, 30):
+            slista = ""
+            for i2 in range(0, 20):
+                slista = slista + random.choice(string.ascii_letters)
+            lista1.append(slista)
 
         for i in range(0, len(lista1)):
             for i2 in range(0, (len(lista1) - 1)):
@@ -33,8 +37,11 @@ def ordsortint():
         qtdtrocas2 = int(0)
         resultados2 = []
 
-        for i in range(0, 5000):
-            lista2.append(random.randint(1, 100))
+        for i in range(0, 300):
+            slista = ""
+            for i2 in range(0, 20):
+                slista = slista + random.choice(string.ascii_letters)
+            lista2.append(slista)
 
         for i in range(0, len(lista2)):
             for i2 in range(0, (len(lista2) - 1)):
@@ -62,12 +69,9 @@ def ordsortint():
     tempovet2 = fim2 - inicio2
     diftempo = tempovet2 - tempovet1
 
-    print('=' * 65)
-    print(f'Quantidade de comparações Vet3000 VS Vet5000:   {resultados1[0]}   VS   {resultados2[0]}')
-    print(f'\nQuantidade de trocas Vet3000 VS Vet5000:   {resultados1[1]}   VS   {resultados2[1]}')
-    print(f'\nDiferença comparação:   {difcomparacoes}')
-    print(f'Diferença troca:   {diftroca}')
-    print(f'\nO tempo de execução dos vetores é de:   {tempovet1:.2f} s  VS   {tempovet2:.2f} s')
-    print(f'\nA diferença de tempo de execução do vet1 para o vet2 é de:   {diftempo:.2f} s')
-    print('=' * 65)
+    resultadosgeral = []
+    resultadosgeral.append(difcomparacoes)
+    resultadosgeral.append(diftroca)
+    resultadosgeral.append(diftempo)
 
+    return resultadosgeral

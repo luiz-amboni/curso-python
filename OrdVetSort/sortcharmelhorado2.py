@@ -2,7 +2,7 @@ import random
 import time
 import string
 
-def ordsortintmelhorado2():
+def ordsortcharmelhorado2():
 
 
     def ordvet1():

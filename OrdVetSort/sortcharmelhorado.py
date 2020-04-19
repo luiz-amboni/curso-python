@@ -3,7 +3,7 @@ import string
 import time
 
 
-def ordsortchar():
+def ordsortcharmelhorado():
 
     def ordvet1():
 
