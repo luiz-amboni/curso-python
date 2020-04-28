@@ -1,9 +1,9 @@
 import item1
+import item2
 
-menu = '1- Ordenação de nomes algoritimo de ordenação por inserção(Insertion Sort)'
+menuSelect = int(input('[1] - Exercício 3.1 \n[2] - Exercício 3.2 \n[3] - Exercício 3.3\n'))
 
-def renderMenu():
-    opcaoMenu = int(input(menu))
-    return opcaoMenu
-
-renderMenu()
+if menuSelect == 1:
+    item1.ordVetSelect()
+elif menuSelect == 2:
+    item2.ordVetMerge()

@@ -1,4 +1,4 @@
-def listaNomes():
+def ordVetSelect():
 
     lista_nomes = []
     limite_max = 13
