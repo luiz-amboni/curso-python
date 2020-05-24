@@ -1,4 +1,4 @@
-from funcoes import*
+from ListaEncadeada04.funcoes import*
 
 lista1 = ListaEncadeada() #esta é a lista encadeada que eu vou utilizar
 lista_aux1 = [] # essas listas auxiliares são para poder fazer as movimentações

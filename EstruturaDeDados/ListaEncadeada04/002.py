@@ -1,4 +1,4 @@
-from funcoes import*
+from ListaEncadeada04.funcoes import*
 
 lista = ListaEncadeada()
 dic_aux = {}

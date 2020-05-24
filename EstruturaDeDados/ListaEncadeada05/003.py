@@ -6,8 +6,8 @@ lista_encadeada3 = ListaEncadeada()
 lista_encadeada4 = ListaEncadeada()
 lista_encadeada5 = ListaEncadeada()
 
-lista_nomes = ["hfsdbju", "iugsbjikk", "lkjljkh", "giyfsdgyhb", "kljdshf"]
-lista_notas = [8, 5, 6.5, 7, 4.5]
+lista_nomes = ["Luiz", "Pedro", "João", "Henrique", "Marcela"]
+lista_notas = [7, 8, 9.5, 4, 5.5]
 lista_aprovados = []
 
 while len(lista_nomes) < 5:
